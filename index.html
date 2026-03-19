@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Neon Runner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="ui-overlay">
+            <h1 id="game-title">VIBE RUNNER</h1>
+            <div id="score">Poäng: 0</div>
+            <div id="start-screen" class="overlay-screen">
+                <h2>Redo att vibba?</h2>
+                <p>Använd Mellanslag eller Klicka för att hoppa</p>
+                <button id="start-button">STARTA SPEL</button>
+            </div>
+            <div id="game-over-screen" class="overlay-screen hidden">
+                <h2>Game Over</h2>
+                <p id="final-score">Slutgiltig poäng: 0</p>
+                <button id="restart-button">SPELA IGEN</button>
+            </div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
